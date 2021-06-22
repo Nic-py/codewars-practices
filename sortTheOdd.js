@@ -1,10 +1,13 @@
 let array = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
 // console.log(array.filter(odds => odds % 2 === 1))
-
-let sortedOddNums = array.filter(number => number % 2 === 1).sort((a, b) => a-b);
+/*FILTER ODD NUMBERS,
+SORT THE FILTERED ODD NUMBERS IN 
+ASCENDING ORDER
+*/
+let sortedOddNums = array.filter(number => number % 2 !== 0).sort((a, b) => a-b);
 // console.log(sortedOddNums)
-let sortArray = array.map(numbers => numbers % 2 === 1 ? sortedOddNums.shift() : numbers)
-//return sortArray;
+let sortArray = array.map(numbers => numbers % 2 !== 0 ? sortedOddNums.shift() : numbers) //numbers%2 === 1 DOEST NOT WORK
+return sortArray;
 // let sortedArrayOdd = oddNums.sort((a, b) => a-b)
 
 console.log(sortArray) 
