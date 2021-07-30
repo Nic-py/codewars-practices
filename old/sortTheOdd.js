@@ -6,7 +6,7 @@ ASCENDING ORDER
 */
 let oddNums = array.filter(number => number % 2 !== 0)
 let sortedOddNums = oddNums.sort((x, y) => x-y);
-// console.log(sortedOddNums);
+// console.log(sortedOddNums);db.version()
 let sortednumbers = array.map(a => a % 2 !== 0 ? sortedOddNums.shift() : a);
 console.log(array)
 console.log(sortednumbers);
