@@ -6,3 +6,4 @@ function count (string) {
     })
      return count;
   }
+  console.log(count("ribashiongilogaseshiakilitirugaruka"))
